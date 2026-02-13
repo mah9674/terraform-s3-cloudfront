@@ -40,10 +40,10 @@ jobs:
 
       - name: Upload Website to S3
         run: |
-          aws s3 sync website/ s3://demo-terraform-bucket-1234567 --delete
+          aws s3 sync website/ s3://mahasweta-terraform-site-987654 --delete
 
       - name: Invalidate CloudFront Cache
         run: |
           aws cloudfront create-invalidation \
-          --distribution-id EJYCVM9WMVR9G \
+          --distribution-id ETJ9DZE4BNTBH \
           --paths "/*"
