@@ -75,3 +75,6 @@ resource "aws_cloudfront_distribution" "cdn" {
   }
 }
 
+resource "aws_s3_bucket" "website1"{
+  bucket = "mahasweta-terraform-site-987654321"
+}
